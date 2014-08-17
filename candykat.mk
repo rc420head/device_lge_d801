@@ -6,17 +6,17 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
 # Inherit some common Slim stuff.
-$(call inherit-product, vendor/slim/config/common_full_phone.mk)
+$(call inherit-product, vendor/candykat/config/common_full_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/candykat/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/d801/full_d801.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := d801
-PRODUCT_NAME := slim_d801
+PRODUCT_NAME := candykat_d801
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := LG-D801
 PRODUCT_MANUFACTURER := lge
